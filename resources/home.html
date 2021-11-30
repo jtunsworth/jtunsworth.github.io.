@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>James Unsworth Coding Portfolio</title>
+        <link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src ="script.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class ="navbar">
+                    <li><a href="#headerBox">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href ="#skills">Skills</a></li>
+                    <li><a href ="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div id = "headerBox">
+                <h1><strong>JAMES UNSWORTH</strong></h1>
+                <h2>Coding & Programming Portfolio</h2>
+            </div>
+        </header>
+        <main>
+            <section id="aboutMe">
+                <div class = "aboutContainer">
+                    <h2><strong>About Me</strong></h2>
+                    <p>Hello, my name is James Unsworth. I am a aspiring full-stack web developer and professional actor/stunt performer. I am currently enrolled on multiple programming and coding courses to help build my prospects for a future in freelance web development. My life in the performance industry has given me a strong base of skills including team participation, leadership, creativity and a dedicated work ethic. I am proficiant in HTML, CSS, JavaScript, Node, Python and GitHub. I aim to grow my skillset and build towards my goal of becoming a full-stack web developer, working alongside my career in the film industry.</p>
+                    <p>Welcome to my portfolio!</p>
+                    <div class = "image-container">
+                        <img src="../images/headshot.JPG" alt="Image of James Unsworth">
+                    </div>  
+                </div>
+            </section>
+            <section id ="projects">
+                <div class = "container">
+                    <h2><strong>Projects</strong></h2>
+                    <details class = "project">
+                        <summary class="project-title">Actor/Stunts Website</summary>
+                        <p class = "project-decription">Coming soon!</p>
+                    </details>
+                    <details class = "project">
+                        <summary class="project-title">Dark Souls Message Generator</summary>
+                        <p class = "project-decription">A javascript program that creates a random message based upon the 'Dark Souls' universe from the 'From Software' game franchise.</p>
+                        <div id = "#DSMessageGenerator">
+                           <button id="btn" onclick = "displayMessage(); "><strong>CLICK ME!</strong></button>
+                           <p id="message"></p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+            <section id="skills">
+                <div class = "container">
+                    <h2><strong>Skills</strong></h2>
+                    <!--Slideshow Container-->
+                    <div class ="slideshow-container">
+                        <!--Full Width Images with number & caption text-->
+                        <div class = "mySlides">
+                            <div class="numberText">1 / 6</div>
+                            <img src="../images/logos/htmlColor.png" style="width:25%">
+                            
+                        </div>
+                        <div class = "mySlides">
+                            <div class="numberText">2 / 6</div>
+                            <img src="../images/logos/css3.png" style="width:25%">
+                            
+                        </div>
+                        <div class = "mySlides">
+                            <div class="numberText">3 / 6</div>
+                            <img src="../images/logos/javascriptColor.png" style="width:25%">
+                            
+                        </div>
+                        <div class = "mySlides">
+                            <div class="numberText">4 / 6</div>
+                            <img src="../images/logos/pythonColor.png" style="width:25%">
+                            
+                        </div>
+                        <div class = "mySlides">
+                            <div class="numberText">5 / 6</div>
+                            <img src="../images/logos/nodeColor.png" style="width:25%">
+                            
+                        </div>
+                        <div class = "mySlides">
+                            <div class="numberText">6 / 6</div>
+                            <img src="../images/logos/githubColor.png" style="width:25%">
+                            
+                        </div>
+                        <!--Next and previous buttons-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!--Image text-->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!--Thumbnail Images-->
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="../images/logos/htmlColor.png" style="width:50%" onclick="currentSlide(1)" alt="HTML 5">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../images/logos/css3.png" style="width:50%" onclick="currentSlide(2)" alt="CSS 3">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../images/logos/javascriptColor.png" style="width:50%" onclick="currentSlide(3)" alt="JavaScript">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../images/logos/pythonColor.png" style="width:50%" onclick="currentSlide(4)" alt="Python">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../images/logos/nodeColor.png" style="width:50%" onclick="currentSlide(5)" alt="Node">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="../images/logos/githubColor.png" style="width:50%" onclick="currentSlide(6)" alt="GitHub">
+                            </div>
+                        </div>
+                    </div>       
+            </section>
+        </main>
+        <footer>
+            <h4>Thank you for visiting!</h4>
+        </footer>
+    </body>
+</html>

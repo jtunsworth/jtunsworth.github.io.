@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Lato&family=Merriweather:wght@700&family=Raleway:wght@500&display=swap');
+
+html {
+    height: 100%;
+    font-size: 18px;
+}
+
+body {
+    height:100%;
+    background-color: #1b1b1b;
+    color: #c0c0c0;
+}
+
+h1, h2, h4, a {
+    font-family: 'Lato', sans-serif;
+    color: #c0c0c0;
+}
+
+a:link {
+    text-decoration: none;
+}
+#contact a:visited {
+    color: #ed411d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a4c1cc;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #c0c0c0;
+    padding: 1rem;
+}
+
+h2, h4 {
+    color: #a4c1cc;
+    padding: 1rem;
+
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+nav {
+    margin: none;
+    display: inline;
+
+   
+}
+
+.navbar {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    background-color: #112735;
+    height: 4rem;
+    list-style-type: none;
+    float: right;
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar ul {
+    
+    background-color: #112735;
+    width:100%;
+}  
+
+.navbar li a {
+    border-right: 1px solid #c0c0c0;
+    margin-right: 0.5rem;
+    
+}
+
+.navbar li:last-child a {
+    border-right: none;
+}
+
+.navbar a {
+    padding: 14px 16px;
+    text-align: center;
+}
+
+
+#headerBox {
+    text-align: center;
+    padding:6rem;
+    background-image: url(../images/code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#headerBox h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000;
+    font-family: 'Merriweather', sans-serif;
+}
+
+#headerBox h2 {
+    font-size: 2.5rem;
+    text-shadow: -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000;
+    font-family: 'Lato', sans-serif;
+}
+main {
+    margin: 1rem;
+}
+
+.container {
+    padding: 2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.aboutContainer {
+    padding: 2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.image-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.image-container img {
+    height: 30%;
+    width: 30%;
+    align-items: center;
+    border: 5px solid #112735;
+    border-radius: 15px 15px 15px 15px;
+    
+    
+}   
+
+#aboutMe {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.projects,
+.project{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    margin:1rem;
+}
+
+p.project-description {
+    margin: 1rem;
+}
+#DSMessageGenerator {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+#btn {
+    margin: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-color:#112735;
+    color: #c0c0c0;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+
+p#message { 
+    font-family: 'Estonia', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 1rem;
+    background-color: #1b1b1b;
+    color: #c0c0c0;
+    padding: 2rem;
+    border-radius: 20%;
+    opacity: 0;
+    z-index:2;
+}
+
+/*p#message image {
+    opacity: 0.1;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+
+/*Position the image container */
+.slideshow-container {
+    position:relative;
+    text-align: center;
+   
+}
+/*Hides images by default*/
+.mySlides {
+    display: none;
+    align-content: center;
+}
+/*add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #c0c0c0;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/*position next button to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    
+}
+
+.prev {
+    left: 0;
+}
+
+
+
+/*On hover, add a black background color with a little bit of see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*number text*/
+.numberText {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*container for image text*/
+.caption-container {
+    text-align: center;
+    background-color:#1b1b1b;
+    padding: 2px 16px;
+    color: #c0c0c0;
+    
+}
+
+#skills p {
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*six columns side by side*/
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/*add transparancey effect to thumbnail image*/
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+footer {
+    border-top: 1px #ed411d solid;
+    padding: 2rem;
+    text-align: center;
+}
