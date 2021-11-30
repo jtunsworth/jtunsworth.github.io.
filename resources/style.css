@@ -178,8 +178,8 @@ p.project-description {
 
 p#message { 
     font-family: 'Estonia', sans-serif;
-    font-size: 3rem;
-    letter-spacing: 1px;
+    font-size: 4rem;
+    letter-spacing: 2px;
     text-align: center;
     display: flex;
     flex-direction: column;
