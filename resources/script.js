@@ -1,11 +1,9 @@
 //fade
 $(document).ready(function(){
-    $("#btn").click(function() {
-        $("#message").fadeIn(900);
+   $("#btn").click(function() {
+       $("#message").hide().fadeIn(300);
     });
 });
-
-
 
 
 //DSMessage
@@ -54,15 +52,17 @@ let dsMessage = {
         );
     };
  
-   
+    
     //display Message
-    function displayMessage() {
-       document.getElementById("message").innerHTML = yourDSMessage();
-       document.getElementById("message").style.border = "3px solid #c0c0c0";
-       document.getElementById("message").style.transition="opacity 3s";
-       document.getElementById("message").style.opacity="1";
-       //document.getElementById("message").style.backgroundImage="url('../images/bonfire.png')";
-    }
+   function displayMessage() {
+
+    document.getElementById("message").innerHTML = yourDSMessage();
+    document.getElementById("message").style.border = "3px solid #c0c0c0";
+    document.getElementById("message").style.transition="opacity 3s";
+    document.getElementById("message").style.opacity="1";
+   }
+
+
 
 //slideshow
 var slideIndex = 1;
