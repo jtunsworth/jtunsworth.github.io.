@@ -9,6 +9,7 @@ body {
     height:100%;
     background-color: #1b1b1b;
     color: #c0c0c0;
+    width: 100%;
 }
 
 h1, h2, h4, a {
@@ -75,7 +76,7 @@ nav {
 
 .navbar li a {
     border-right: 1px solid #c0c0c0;
-    margin-right: 0.5rem;
+    
     
 }
 
@@ -139,8 +140,6 @@ main {
     align-items: center;
     border: 5px solid #112735;
     border-radius: 15px 15px 15px 15px;
-    
-    
 }   
 
 #aboutMe {
@@ -159,11 +158,6 @@ main {
 p.project-description {
     margin: 1rem;
 }
-#DSMessageGenerator {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
 
 #btn {
     margin: 2rem;
@@ -173,6 +167,7 @@ p.project-description {
     color: #c0c0c0;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
+    
 }
 
 p#message { 
@@ -328,4 +323,322 @@ footer {
     margin: 1rem;
 }
 
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+
+    html {
+        font-size: 18px;
+    }
+  
+    h1 {
+        font-size: 2rem;
+        color: #c0c0c0;
+        padding: 1rem;
+    }
+    
+    h2, h4 {
+        color: #a4c1cc;
+        padding: 1rem;
+    
+    }
+    
+    p {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    
+    nav {
+        margin: none;
+        display: inline;
+        text-align: center;
+        justify-content: center;
+    
+       
+    }
+    
+    .navbar {
+        font-family: 'Lato', sans-serif;
+        background-color: #112735;
+        height: 4rem;
+        list-style-type: none;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border: none;
+    }
+    
+    .navbar ul {
+        
+        background-color: #112735;
+        width:100%;
+        justify-items: center;
+        border: none;
+    }  
+    
+    .navbar li a {
+        justify-items: space-between;
+        border: none;
+
+    }
+    
+    .navbar li:last-child a {
+        border-right: none;
+    }
+    
+    .navbar a {
+        padding: 14px 16px;
+        text-align: center;
+    }
+    
+    #headerBox {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .aboutContainer {
+        padding: 1rem;
+        margin: 0;
+        text-align: left;
+    }
+
+    .image-container img {
+        height: 80%;
+        width: 80%;
+        align-items: center;
+        padding: 1rem;
+        border: 5px solid #112735;
+        border-radius: 15px 15px 15px 15px;
+    }   
+
+    .container {
+        padding: 0;
+        text-align: left;
+    }
+    
+
+    #DSMessageGenerator {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+   
+    #btn {
+        margin: 2rem;
+        display: flex;
+        text-align: center;
+        padding: 1rem;
+        background-color:#112735;
+        color: #c0c0c0;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1px;
+        justify-content: center;
+    }
+
+    p#message {
+        font-size: 2.3rem;
+    }
+
+    .numberText {
+        font-size: 1rem;
+    }
+
+    .contact {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .contact p {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+    .contact img {
+        height: 200px;
+        width: 200px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .contact h3 {
+        color: #a4c1cc;
+        padding: 1rem;
+        text-decoration: underline;
+        font-size: 1.5rem;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1px;
+        margin:1rem;
+    }
+    
+    
+    .contactInfo {
+        margin: 1rem;
+    }
+};
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    html {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+  
+    h1 {
+        font-size: 2rem;
+        color: #c0c0c0;
+        padding: 1rem;
+    }
+    
+    h2, h4 {
+        color: #a4c1cc;
+        padding: 1rem;
+    
+    }
+    
+    p {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    
+    nav {
+        margin: none;
+        display: inline;
+        text-align: center;
+        justify-content: center;
+    
+       
+    }
+    
+    .navbar {
+        font-family: 'Lato', sans-serif;
+        background-color: #112735;
+        height: 4rem;
+        list-style-type: none;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border: none;
+    }
+    
+    .navbar ul {
+        
+        background-color: #112735;
+        width:100%;
+        justify-items: center;
+        border: none;
+    }  
+    
+    .navbar li a {
+        justify-items: space-between;
+        border: none;
+
+    }
+    
+    .navbar li:last-child a {
+        border-right: none;
+    }
+    
+    .navbar a {
+        padding: 14px 16px;
+        text-align: center;
+    }
+    
+    #headerBox {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .aboutContainer {
+        padding: 1rem;
+        margin: 0;
+        text-align: left;
+    }
+
+    .image-container img {
+        height: 80%;
+        width: 80%;
+        align-items: center;
+        padding: 1rem;
+        border: 5px solid #112735;
+        border-radius: 15px 15px 15px 15px;
+    }   
+
+    .container {
+        padding: 0;
+        text-align: left;
+    }
+    
+
+    #DSMessageGenerator {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+   
+    #btn {
+        margin: 2rem;
+        display: flex;
+        text-align: center;
+        padding: 1rem;
+        background-color:#112735;
+        color: #c0c0c0;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1px;
+        justify-content: center;
+    }
+
+    p#message {
+        font-size: 2.3rem;
+    }
+
+    .numberText {
+        font-size: 1rem;
+    }
+
+    .contact {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .contact p {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+    .contact img {
+        height: 200px;
+        width: 200px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .contact h3 {
+        color: #a4c1cc;
+        padding: 1rem;
+        text-decoration: underline;
+        font-size: 1.5rem;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1px;
+        margin:1rem;
+    }
+    
+    
+    .contactInfo {
+        margin: 1rem;
+    }
+};
 
